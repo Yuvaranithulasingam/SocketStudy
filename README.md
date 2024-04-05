@@ -13,7 +13,7 @@ Socket programming involves the use of sockets, which serve as endpoints for com
 •	Sockets can be classified into two main types: Stream Sockets and Datagram Sockets.</br>
 •	Stream Sockets provide a reliable, connection-oriented communication, while Datagram Sockets are connectionless and operate in a best-effort mode.</br>
 
-2. Client-Server Model
+2.Client-Server Model
 •	Socket programming typically follows the client-server model.</br>
 •	The server listens for incoming connections from clients, while clients initiate connections to the server.</br>
 •	Servers are passive, waiting for connection requests, and clients are active, initiating communication.</br>
