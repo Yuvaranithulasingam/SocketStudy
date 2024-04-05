@@ -14,19 +14,16 @@ Socket programming involves the use of sockets, which serve as endpoints for com
 •	Stream Sockets provide a reliable, connection-oriented communication, while Datagram Sockets are connectionless and operate in a best-effort mode.</br>
 
 2. Client-Server Model
-
 •	Socket programming typically follows the client-server model.</br>
 •	The server listens for incoming connections from clients, while clients initiate connections to the server.</br>
 •	Servers are passive, waiting for connection requests, and clients are active, initiating communication.</br>
 
 3, TCP/IP Protocol:
-
 •	Transmission Control Protocol (TCP) and Internet Protocol (IP) are the foundational protocols for socket programming.</br>
 •	TCP provides reliable, connection-oriented communication, ensuring data integrity and order.</br>
 •	IP facilitates the routing of data between devices in a network.</br>
 
 4.Basic Socket Functions:
-
 •	Socket programming involves a set of functions provided by the operating system or programming language to create, bind, listen, accept, connect, send, and receive data through sockets.</br>
 •	Examples of functions include socket(), bind(), listen(), accept(), connect(), send(), and recv().</br>
 
@@ -43,7 +40,9 @@ Clients create a socket using socket() and connect to a server using connect().<
 After establishing a connection, clients can send and receive data using send() and recv().</br>
 
 ## Use Cases of Socket Programming:
+
 Socket programming finds applications in various domains, including web development, file transfer protocols, online gaming, and real-time communication. It is the foundation for protocols like HTTP, FTP, and SMTP, which power the internet. Socket programming enables the development of both server and client applications, facilitating the exchange of information between devices in a networked environment.
+
 ## Example Use Cases:
 
 1.	Web servers: Web servers use socket programming to handle incoming HTTP requests from clients, serving web pages and content.</br>
