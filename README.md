@@ -8,22 +8,26 @@ Socket programming is a crucial aspect of network communication, allowing for da
 Socket programming involves the use of sockets, which serve as endpoints for communication. A socket is identified by an IP address and a port number, and it facilitates data transfer between a client and a server. The two main types of sockets are Stream Sockets, which provide a reliable, connection-oriented communication, and Datagram Sockets, which are connectionless and suitable for scenarios where reliability is less critical.
 ## Key Concepts in Socket Programming:
 1.Sockets
+
 •	A socket is a software representation of a communication endpoint in a network.</br>
 •	It is identified by an IP address and a port number.</br>
 •	Sockets can be classified into two main types: Stream Sockets and Datagram Sockets.</br>
 •	Stream Sockets provide a reliable, connection-oriented communication, while Datagram Sockets are connectionless and operate in a best-effort mode.</br>
 
 2.Client-Server Model
+
 •	Socket programming typically follows the client-server model.</br>
 •	The server listens for incoming connections from clients, while clients initiate connections to the server.</br>
 •	Servers are passive, waiting for connection requests, and clients are active, initiating communication.</br>
 
 3, TCP/IP Protocol:
+
 •	Transmission Control Protocol (TCP) and Internet Protocol (IP) are the foundational protocols for socket programming.</br>
 •	TCP provides reliable, connection-oriented communication, ensuring data integrity and order.</br>
 •	IP facilitates the routing of data between devices in a network.</br>
 
 4.Basic Socket Functions:
+
 •	Socket programming involves a set of functions provided by the operating system or programming language to create, bind, listen, accept, connect, send, and receive data through sockets.</br>
 •	Examples of functions include socket(), bind(), listen(), accept(), connect(), send(), and recv().</br>
 
