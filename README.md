@@ -83,6 +83,8 @@ while True:
  print(s.recv(1024).decode())
  s.send("Acknowledgement Recived".encode())
 ```
+#### Name: Yuvarani T
+#### Register no:212222110057
 
 ## OUTPUT
  ### CLIENT:
