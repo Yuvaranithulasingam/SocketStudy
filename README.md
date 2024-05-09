@@ -59,39 +59,37 @@ Socket programming finds applications in various domains, including web developm
  ### CLIENT:
  ```
 import socket
+from datetime import datetime
 s=socket.socket()
 s.bind(('localhost',8000))
 s.listen(5)
 c,addr=s.accept()
-while True:
- i=input("Enter a data: ")
- c.send(i.encode())
- ack=c.recv(1024).decode()
- if ack:
+print("Client Address : ",addr)
+now = datetime.now()
+c.send(now.strftime("%d/%m/%Y %H:%M:%S").encode())
+ack=c.recv(1024).decode()
+if ack:
  print(ack)
- continue
- else:
- c.close()
- break
+c.close()
 ```
 ### SERVER
 ```
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
-while True:
- print(s.recv(1024).decode())
- s.send("Acknowledgement Recived".encode())
+print(s.getsockname())
+print(s.recv(1024).decode())
+s.send("acknowledgement recived from the server".encode())
 ```
 #### Name: Yuvarani T
 #### Register no:212222110057
 
 ## OUTPUT
  ### CLIENT:
- ![TODAY1](https://github.com/Yuvaranithulasingam/SocketStudy/assets/121418522/55f2bd97-cb02-43ca-aec4-05d802fa431a)
+![image](https://github.com/Yuvaranithulasingam/SocketStudy/assets/121418522/8a60e5ee-7095-43cb-aac3-0aa9f7197eb5)
 
- ### SERVER:
- ![TODAY2](https://github.com/Yuvaranithulasingam/SocketStudy/assets/121418522/4fde0043-693b-4662-b305-ad5b86224744)
+### SERVER:
+![image](https://github.com/Yuvaranithulasingam/SocketStudy/assets/121418522/7c591d08-b710-4e47-a585-cb6b052ab183)
 
 ## Result:
 Thus the study of Socket Programming Completed Successfully
